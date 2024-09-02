@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.toast{
+    animation: my-animation 1s 1;
+}
+
+
+@keyframes my-animation {
+    0%{
+        transform:translateX(150%);
+    }
+    100%{
+        transform: translateX(0%);
+
+    }
+}
