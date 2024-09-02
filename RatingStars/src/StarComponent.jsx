@@ -1,15 +1,10 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 
 const StarComponent = ({starCount = 5})=>{
 
     const [starValue,setStarValue] = useState(0);
     const [HoverValue,setHoverValue] = useState(0);
-
-    useEffect(()=>{
-        console.log(starValue);
-
-    },[starValue])
 
     const arr = new Array(starCount);
     arr.fill(0);
